@@ -4,6 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 48b494291db376848a2885742c1c9564
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/GimbalSimulation.unity
+    guid: 33d2720606eb1924ca18d118f1df2c39
   m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c291ff2e6d3b4f449a25c3cf12348836, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 33932b03a5f4644b78c6e087a700ee88, type: 2}
