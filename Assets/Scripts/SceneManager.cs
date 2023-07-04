@@ -14,4 +14,9 @@ public class SceneManager : MonoBehaviour {
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(scenename);
     }
+
+    public void TestScene3(string scenename)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(scenename);
+    }
 }

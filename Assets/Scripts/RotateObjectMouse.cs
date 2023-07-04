@@ -7,7 +7,6 @@ public class RotateObjectMouse : MonoBehaviour {
     float rotSpeed = 20;
     float distance = 10;
 
-
     void Update()
     {
         if (Input.GetMouseButtonDown(1))
@@ -19,9 +18,10 @@ public class RotateObjectMouse : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(2))
         {
-            Debug.Log("Pressed middle-click.");
+            this.transform.localScale -= new Vector3(0.1f, 0.1f, 0.1f);
         }
     }
+
     void OnMouseDrag()
     {
         float rotX = Input.GetAxis("Mouse X") * rotSpeed * Mathf.Deg2Rad;
@@ -30,6 +30,4 @@ public class RotateObjectMouse : MonoBehaviour {
         transform.RotateAround(Vector3.up, -rotX);
         transform.RotateAround(Vector3.right, rotY); 
     }
-
-
 }
