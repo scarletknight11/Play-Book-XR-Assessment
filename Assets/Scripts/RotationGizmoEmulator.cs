@@ -70,6 +70,11 @@ public class RotationGizmoEmulator : MonoBehaviour {
             this.transform.localScale += new Vector3(0f, 0.01f, 0f);
         }
 
+        if (coordSystem == CoordSystem.Local && Input.GetKey(KeyCode.N))
+        {
+            this.transform.localScale += new Vector3(0f, 0.0f, 0.01f);
+        }
+
         if (Input.GetKey(KeyCode.T))
         {
             coordSystem = CoordSystem.Global;
@@ -125,6 +130,11 @@ public class RotationGizmoEmulator : MonoBehaviour {
         if (coordSystem == CoordSystem.Global && Input.GetKey(KeyCode.B))
         {
             this.transform.localScale += new Vector3(0f, 0.01f, 0f);
+        }
+
+        if (coordSystem == CoordSystem.Global && Input.GetKey(KeyCode.N))
+        {
+            this.transform.localScale += new Vector3(0f, 0.0f, 0.01f);
         }
 
         transform.rotation = currentRotation;
